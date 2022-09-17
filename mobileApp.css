@@ -1,0 +1,75 @@
+.mobileApp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: hsl(270, 20%, 96%);
+  height: 400px;
+  width: 200px;
+  margin-top: 10px;
+  border-radius: 18px;
+  margin-bottom: 10px;
+}
+.appheader {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-image: linear-gradient(
+    to right,
+    hsl(264, 100%, 61%),
+    hsl(293, 100%, 63%)
+  );
+}
+.screenNodge {
+  position: absolute;
+  top: 10px;
+  height: 12px;
+  width: 120px;
+  z-index: 200;
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.profileInfo {
+  display: flex;
+  flex-direction: row;
+  column-gap: 6px;
+  justify-content: space-between;
+  margin-left: 15px;
+  margin-top: 20px;
+}
+.profilePic {
+  object-fit: cover;
+  object-position: center;
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  border: white 1px solid;
+}
+.leftArrow {
+  width: 10px;
+  height: 10px;
+}
+.profileDetail {
+  display: flex;
+  flex-direction: column;
+  column-gap: 6px;
+}
+.profileName {
+  font-size: 10px;
+}
+.profileDescription {
+  font-size: 6px;
+  color: hsl(276, 100%, 81%);
+}
+.dropmenu {
+  margin-top: 20px;
+  margin-right: 5px;
+  cursor: pointer;
+}

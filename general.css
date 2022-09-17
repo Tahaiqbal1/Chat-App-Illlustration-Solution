@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Rubik:wght@400;500;700&display=swap");
+/* universal selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* tag selectors */
+body {
+  color: hsl(0, 0%, 100%);
+  font-family: "Rubik", Arial, Helvetica, sans-serif, monospace;
+  font-size: 16px;
+  overflow: auto;
+}
+li {
+  line-height: 0;
+  height: 4px;
+  width: 4px;
+  font-size: 8px;
+}
+/* class Selectors */
+.mainContainer {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 120px;
+  margin: 0 auto;
+  padding: 64px 32px 120px 32px;
+}
+.gradientLeftbg {
+  background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 26%;
+  height: 85%;
+  border-radius: 0 0 100% 50%/0 0 80% 15%;
+}
+.greyRightbg {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  border-radius: 250px;
+  background-color: hsla(270, 20%, 96%, 0.767);
+  width: 26%;
+  height: 85%;
+  border-radius: 100% 50% 0 0 / 80% 15% 0 0;
+}
+.attribution {
+  position: absolute;
+  max-width: 60%;
+  bottom: 10px;
+  font-size: 11px;
+  color: black;
+  background-color: rgb(255, 255, 255);
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: inset 1px 1px 10px rgba(85, 85, 85, 0.2);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/* Media Queries for responsiveness */
+@media (max-width: 720px) {
+  body {
+    overflow: visible;
+  }
+  .gradientLeftbg {
+    width: 51%;
+    height: 65%;
+  }
+  .greyRightbg {
+    width: 40%;
+    height: 60%;
+  }
+  .mainContainer {
+    flex-direction: column;
+    row-gap: 40px;
+    padding-bottom: 32px;
+  }
+  .serviceInfo {
+    padding: 0px 60px 40px 60px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .attribution {
+    text-align: center;
+  }
+}
