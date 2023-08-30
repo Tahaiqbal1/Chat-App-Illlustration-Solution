@@ -1,0 +1,16 @@
+.serviceInfo {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+.serviceinfoHeading {
+  color: hsl(271, 36%, 24%);
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 1.7rem;
+}
+.serviceinfodetail {
+  color: hsl(270, 7%, 64%);
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+}
